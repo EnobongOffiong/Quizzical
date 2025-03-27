@@ -1,0 +1,283 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: rgb(244, 246, 251);
+}
+
+.header-container{
+
+text-align: center;
+}
+
+.App{
+
+  
+}
+
+.category-container{
+  
+}
+
+main{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(41, 50, 101);
+ 
+  
+}
+
+.subheader{
+  margin-top: 0;
+}
+
+.header{
+  margin-bottom: 5px;
+}
+
+.container-container{
+  text-align: left;
+  padding-left: 20px;
+}
+
+.container-buttons{
+  
+max-width: 800px;
+  
+}
+
+.selected{
+  color: #293265;
+  border: none;
+  background-color: #D6DBF5;
+  border-radius: 10px;
+  margin-right: 8px;
+  padding: 6px 13px;
+  margin-bottom: 5px;
+
+}
+
+.btn-choice{
+  background-color:  rgb(244, 246, 251);;
+  border: 0.7px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #293265;
+  border-color: #293265;
+  padding: 6.5px 13px;
+  margin-bottom: 8px;
+}
+
+.btn-choice:hover{
+  cursor: pointer;
+}
+
+.start-btn{
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #4e5aa7;
+  border: none;
+  border-radius: 9px;
+  margin-top: 8px;
+}
+
+.start-btn{
+  cursor: pointer;
+}
+
+.question-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  border-bottom: 0.7px solid #dbdef0;
+  padding-bottom: 15px;
+}
+
+.question{
+  font-size: 15px;
+  color: #293265;
+  font-weight: bold;
+}
+.answer-btn{
+  background-color:  rgb(244, 246, 251);;
+  border: 0.7px solid black;
+  border-radius: 10px;
+  margin-right: 8px;
+  color: #293265;
+  border-color: #293265;
+  padding: 6.5px 13px;
+  margin-bottom: 5px;
+}
+
+.quiz-options-container{
+  border-bottom: 0.7px solid #bac0de;
+  padding-bottom: 10px;
+}
+
+.quiz-options-container-header{
+  font-size: 15px;
+}
+
+.quiz-page{
+  padding:10px;
+}
+
+.answer-choice{
+  background-color:  rgb(244, 246, 251);;
+  border: 0.7px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #293265;
+  border-color: #293265;
+  padding: 6.5px 13px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.answer-choice:hover{
+  cursor: pointer;
+}
+
+.check-answers-btn{
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  background-color: #4e5aa7;
+  border: none;
+  border-radius: 9px;
+  margin-top: 8px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  
+}
+.check-answers-btn:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.check-answers-btn:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.check-answer-btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.correct {
+  background-color: #93d7a1;
+  border-color: #9194b1; 
+  color: #293264; 
+}
+
+.incorrect {
+  background-color: #f8baba; 
+  border-color: #f8baba; 
+  color: #9194b1; 
+}
+
+.unselected{
+  background-color: #f4f6fb;
+  color: #9194b1;
+  border-color: #9194b1; 
+
+}
+
+.clicked{
+  background-color: #D6DBF5;
+  border: none;
+  padding: 7px 14px;
+
+}
+
+.no-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+  border-radius: 8px;
+  
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.no-questions-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.skeleton-question {
+  background: rgba(150, 150, 255, 0.1); /* Light blue tint */
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  max-width: 600px; /* Keep it constrained */
+}
+
+.skeleton-title {
+  width: 80%;
+  height: 16px; /* Reduce height */
+  background: rgba(150, 150, 255, 0.2);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.skeleton-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skeleton-option {
+  width: 22%; /* Four options in a row */
+  height: 14px; /* Smaller height */
+  background: rgba(150, 150, 255, 0.2);
+  border-radius: 5px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(150, 150, 255, 0.2);
+  }
+  50% {
+    background-color: rgba(150, 150, 255, 0.3);
+  }
+  100% {
+    background-color: rgba(150, 150, 255, 0.2);
+  }
+}
+
+.skeleton-title,
+.skeleton-option {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+button:disabled {     
+  cursor: not-allowed;         
+}
+
+.score-text{
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.play-again{
+  margin-right: 15px;
+}
